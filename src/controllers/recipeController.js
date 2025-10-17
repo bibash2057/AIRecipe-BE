@@ -26,12 +26,6 @@ exports.generateRecipe = async (req, res) => {
       dietaryFocus
     );
 
-    // const jsonValidation = validateJSON(recipe);
-    // console.log("jso", jsonValidation?.error, jsonValidation?.valid);
-    // if (!jsonValidation.valid) {
-    //   throw new Error(`Invalid JSON: ${jsonValidation?.error}`);
-    // }
-
     res.json({
       data: recipe,
       message: "Succfully Get ALl ",
